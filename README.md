@@ -26,5 +26,5 @@ Contents of this repository:
 -----------------------------
 - **README.md** file (this one)
 - **Code Book.md**. This file explains what is included in the raw and the tidy data sets.
-- **tidyDataset.txt**. This is the second data set (a transformation of Dataset1.rdat following the instructions in the assignment prompt).
+- **tidyDataset.txt**. This is the resulting tidy data set (a transformation of the raw data following the instructions in the assignment prompt).
 - **run_analysis.R**. This is the code to import and transform raw data, turn it into tidyDataset.txt and saving it into your working directory.
