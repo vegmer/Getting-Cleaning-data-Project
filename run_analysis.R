@@ -79,9 +79,8 @@ features <- read.table("UCI HAR Dataset/features.txt")
 ### STEP 3. USE DESCRIPTIVE ACTIVITY NAMES TO NAME THE ACTIVITIES IN THE DATA SET
   # The code for actitivites is as follows: 1.WALKING; 2.WALKING_UPSTAIRS; 3.WALKING_DOWNSTAIRS; 4.SITTING; 5.STANDING; 6.LAYING
   DATmeanStd$Activity <- factor(DATmeanStd$Activity, levels=c(1:6), labels=c("Walk", "Walk upstairs", "Walk downstairs", "Sit", "Stand", "Lay"))
-  #Save this first tidy data set in your working directory as a .txt file
   Dataset1 <- DATmeanStd
-  write.table(Dataset1, file="Dataset1.txt", row.name=F)
+  
 
 ### STEP 4. LABEL THE DATA SET WITH DESCRIPTIVE VARIABLE NAMES
   #Go back to the features object and using featureIdx select the labels of the desired variables:
@@ -96,6 +95,6 @@ features <- read.table("UCI HAR Dataset/features.txt")
     summarise_each(funs(mean(., na.rm=T)))
   
   #Save this second data set in your working directory as a .txt file
-  write.table(Dataset2, file="Dataset2.txt", row.name=F)
+  write.table(Dataset2, file="tidyDataset.txt", row.name=F)
   
   
