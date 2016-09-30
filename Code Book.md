@@ -15,20 +15,20 @@ Within the compressed folder where all the data sets of interest are, several fi
 - **features.txt**. File explaining how the 561 variables in X_train.txt and X_test.txt are coded. It gives a descriptive name of each variable.
 
 
-## 2. Tidy data sets
-- **Dataset 1**. 
-Each  one of the 10299 rows of this dataset represents an observation of one of the 30 subjects, doing one of the 6 activities during one of the 2 phases of the experiment ("Training" and "Test").
-The first three columns indicate what phase, subject and activity correspond with the observation registered in that row. The other 79 variables are either the MEAN or the STANDARD DEVIATION of different parameters recorded by the accelerometer. This is how this dataset was generated:
+## 2. Tidy data set
+- **tidyDataset**. 
+Each  one of the rows of this dataset represents the average by subject and activity on each one of the variables of interest.
+Columns:
+The first three columns indicate the subject and activity. The other 79 variables are either the MEAN or the STANDARD DEVIATION of different parameters recorded by the accelerometer. 
+
+## 3. How this data set is obtained
+The R script **"run_analysis.R"** can be inspected and run in order to obtain these data sets from the raw data.
   - The compressed file provided by the authors is imported into the working directory.
   - The files that contain information of interest (i.e. Features labels, activity labels, subject labels, data set themselves) are imported and assigned to objects.
   - Each observation in the "Training" and "Test" datasets is assigned the subject that is being recorded, the activity he/she was performing and the phase of the experiment.
   - The "Training" and "Test" datasets are merged.
   - Of all the 561 features recorded by the authors, only those that refer to the mean or the standard deviation of a feature are selected.
   - Activity codes are turned into the actual descriptive names of the activities
-  - Each one of the variables in Dataset1 is given a descriptive name of what feature is being recorded.
-  - Dataset1 is saved in the working directory for future use.
+  - Each one of the variables in this data set (Dataset1) is given a descriptive name of what feature is being recorded.
+  - The average for each variable is calculated by subject and activity.
   
-- **Dataset 2**
-  - This second dataset is based on Dataset 1. Here, the average for each variable is calculated by subject and activity.
-  
-The R script **"run_analysis.R"** can be inspected and run in order to obtain these data sets from the raw data.
