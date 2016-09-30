@@ -31,4 +31,4 @@ The first three columns indicate what phase, subject and activity correspond wit
 - **Dataset 2**
   - This second dataset is based on Dataset 1. Here, the average for each variable is calculated by subject and activity.
   
-The R script "run_analysis.R" can be inspected and run in order to obtain these data sets from the raw data.
+The R script **"run_analysis.R"** can be inspected and run in order to obtain these data sets from the raw data.
