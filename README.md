@@ -2,6 +2,8 @@
 
 This is a repository containing my Final Project for the Coursera class "Getting and Cleaning Data" by John Hopkins University.
 
+Nature of the raw data used in this project:
+--------------------------------------------
 The project consisted on getting and cleaning data from the data set collected and presented by:
   >Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. 
   A Public Domain Dataset for Human Activity Recognition Using Smartphones. 
@@ -20,4 +22,10 @@ The description of the methods given by the authors is as follows:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-See the Code Book included in this repository for an explanation of the variables, the data, and transformations that were performed to clean up the data.
+Contents of this repository:
+-----------------------------
+- **README.md** file (this one)
+- **Code Book.md**. This file explains what is included in the raw and the tidy data sets.
+- **Dataset1.rdat**. This is the first tidy data set (a transformation of the raw data following the instructions in the assignment prompt).
+- **Dataset2.rdat**. This is the second data set (a transformation of Dataset1.rdat following the instructions in the assignment prompt).
+- **run_analysis.R**. This is the code to import and transform raw data, turn it into Dataset1 and Dataset2 and saving it into your working directory.
